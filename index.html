@@ -1,1 +1,33 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Ohmry</title>
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon-light.svg" id="favicon">
+  <script>
+    const favicon = document.getElementById('favicon')
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)")
+    favicon.href = "/images/" + (isDark.matches ? "favicon-dark.svg" : "favicon-light.svg")
+  </script>
+</head>
+<body>
+  <div class="wrapper__header">
+    <header>
+      <img src="/images/profile.jpeg">
+      <span>@Ohmry</span>
+    </header>
+  </div>
+  <div class="wrapper__content">
+    <main>
+      This is main
+    </main>
+    <nav>
+      This is nav
+    </nav>
+  </div>
+</body>
+</html>
